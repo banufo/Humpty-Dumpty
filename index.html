@@ -1,0 +1,119 @@
+<style id="jsbin-css">
+body{
+  text-align:center;
+}
+#title{
+  background-color:black;color:white;    
+  border: 2px solid;
+  border-radius: 5px;
+  box-shadow: 10px 10px 5px #888888;
+  text-align:center;
+  font-size:40;font-family:Arial;
+}
+
+#buttons{
+  text-align:center;
+  background-color:silver;
+  visibility:hidden;
+}
+
+#pic{
+  width:400px;box-shadow: 10px 10px 5px #888888;
+  cursor:pointer;
+}
+
+#story{
+  background-color:purple;color:white;    
+  border: 2px solid;
+  border-radius: 15px;
+  box-shadow: 10px 10px 5px #888888;
+  padding-left:30px;
+  font-size:20;font-family:Times New Roman;
+}
+</style>
+<p id="title">
+  title of the story here
+</p>
+<br
+
+<div id="buttons">
+<button onclick="change(0);">Reset</button>
+<button onclick="change(1);">Part 1</button>
+<button onclick="change(2);">Part 2</button>
+<button onclick="change(3);">Part 3</button>
+  
+  </div>
+
+<img id="pic" src="http://yourlifeunlimited.ca/wp-content/uploads/2013/03/BeginNow.jpg" onclick="start();">
+</img>
+
+<p id="story">
+  Story goes here
+  </p>
+<script id="jsbin-javascript">
+var parts=["Welcome to the Humpty Dumpty thing",
+           "Humpty Dumpty sat on a wall...",
+"Humpty Dumpty had a great fall...","Luckily due to the great advances in medical science made in the 20th century Humpty Dumpty made a full recovery"];
+
+var pix=["http://yourlifeunlimited.ca/wp-content/uploads/2013/03/BeginNow.jpg" ,"https://oldstersview.files.wordpress.com/2008/08/humpty.jpg",
+        "http://www.thevirtualvine.com/123/nrsyrhmes/hmpty/HumptyLg.jpg","http://lowres.jantoo.com/food-drink-iv_drip-eggs-broken_eggs-injuries-hospital-36533498_low.jpg"];
+
+function start(){
+  document.getElementById("title").innerHTML="Humpty - Dumpty";
+  document.getElementById("buttons").style.visibility="visible";
+}
+function change(x){
+  document.getElementById("story").innerHTML=parts[x];
+  document.getElementById("pic").src=pix[x];
+}
+</script>
+
+<script id="jsbin-source-css" type="text/css">body{
+  text-align:center;
+}
+#title{
+  background-color:black;color:white;    
+  border: 2px solid;
+  border-radius: 5px;
+  box-shadow: 10px 10px 5px #888888;
+  text-align:center;
+  font-size:40;font-family:Arial;
+}
+
+#buttons{
+  text-align:center;
+  background-color:silver;
+  visibility:hidden;
+}
+
+#pic{
+  width:400px;box-shadow: 10px 10px 5px #888888;
+  cursor:pointer;
+}
+
+#story{
+  background-color:purple;color:white;    
+  border: 2px solid;
+  border-radius: 15px;
+  box-shadow: 10px 10px 5px #888888;
+  padding-left:30px;
+  font-size:20;font-family:Times New Roman;
+}
+</script>
+
+<script id="jsbin-source-javascript" type="text/javascript">var parts=["Welcome to the Humpty Dumpty thing",
+           "Humpty Dumpty sat on a wall...",
+"Humpty Dumpty had a great fall...","Luckily due to the great advances in medical science made in the 20th century Humpty Dumpty made a full recovery"];
+
+var pix=["http://yourlifeunlimited.ca/wp-content/uploads/2013/03/BeginNow.jpg" ,"https://oldstersview.files.wordpress.com/2008/08/humpty.jpg",
+        "http://www.thevirtualvine.com/123/nrsyrhmes/hmpty/HumptyLg.jpg","http://lowres.jantoo.com/food-drink-iv_drip-eggs-broken_eggs-injuries-hospital-36533498_low.jpg"];
+
+function start(){
+  document.getElementById("title").innerHTML="Humpty - Dumpty";
+  document.getElementById("buttons").style.visibility="visible";
+}
+function change(x){
+  document.getElementById("story").innerHTML=parts[x];
+  document.getElementById("pic").src=pix[x];
+}
+</script>
